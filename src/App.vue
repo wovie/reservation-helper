@@ -1,18 +1,41 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div>
+      It is now <Now />.
+    </div>
+    <div>
+      The next 9 AM open time is <NextOpen />,
+    </div>
+    <div>
+      which can make a 30-day reservation for
+      <Earliest />.
+    </div>
+    <div>
+      To make a reservation for <SelectDate />,
+    </div>
+    <div>
+      target this 9 AM open time
+      <CalculateOpen />.
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Now from './components/Now.vue'
+import NextOpen from './components/NextOpen.vue'
+import Earliest from './components/Earliest.vue'
+import CalculateOpen from './components/CalculateOpen.vue'
+import SelectDate from './components/SelectDate.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    Now,
+    NextOpen,
+    Earliest,
+    CalculateOpen,
+    SelectDate,
+  },
 }
 </script>
 
@@ -24,5 +47,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.moment {
+  font-weight: bold;
 }
 </style>
