@@ -5,10 +5,10 @@
     </div>
     <div>
       <div>
-        The next <span class="open-time">open time</span> is <NextOpen />,
+        The next <span class="open-time">booking time</span> is <NextOpen />,
       </div>
       <div>
-        which can make a <span class="reservation">reservation</span> for
+        which makes a <span class="reservation">reservation</span> for
         <Earliest />.
       </div>
     </div>
@@ -17,13 +17,13 @@
         To make a <span class="reservation">reservation</span> for <SelectDate />,
       </div>
       <div>
-        consider this <span class="open-time">open time</span>:
+        the <span class="open-time">booking time</span> is
         <CalculateOpen />.
       </div>
     </div>
     <div>
       <div>
-        <span class="open-time">Open time</span> for booking is usually 9 AM, 10 AM or midnight.
+        <span class="open-time">Booking time</span> is usually 9 AM, 10 AM or midnight.
       </div>
       <div>
         <span class="reservation">Reservations</span> are typically available 30 days in advance.
