@@ -9,7 +9,7 @@ import store from '../store'
 export default {
   computed: {
     now: function() {
-      return store.now
+      return store.now.format('dddd, MMMM D, YYYY h:mm:ss A')
     }
   },
   created: function() {

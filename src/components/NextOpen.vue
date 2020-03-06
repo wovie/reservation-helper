@@ -14,7 +14,7 @@ export default {
       if (nextOpen.isBefore(store.now))
         nextOpen.add(1, 'd')
       store.nextOpen = nextOpen
-      return nextOpen
+      return nextOpen.format('dddd, MMMM D, YYYY H:mm A')
     }
   },
 }

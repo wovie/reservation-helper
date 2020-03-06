@@ -4,18 +4,30 @@
       It is now <Now />.
     </div>
     <div>
-      The next 9 AM open time is <NextOpen />,
+      <div>
+        The next <span class="open-time">open time</span> is <NextOpen />,
+      </div>
+      <div>
+        which can make a <span class="reservation">reservation</span> for
+        <Earliest />.
+      </div>
     </div>
     <div>
-      which can make a 30-day reservation for
-      <Earliest />.
+      <div>
+        To make a <span class="reservation">reservation</span> for <SelectDate />,
+      </div>
+      <div>
+        consider this <span class="open-time">open time</span>:
+        <CalculateOpen />.
+      </div>
     </div>
     <div>
-      To make a reservation for <SelectDate />,
-    </div>
-    <div>
-      target this 9 AM open time
-      <CalculateOpen />.
+      <div>
+        <span class="open-time">Open time</span> for booking is usually 9 AM, 10 AM or midnight.
+      </div>
+      <div>
+        <span class="reservation">Reservations</span> are typically available 30 days in advance.
+      </div>
     </div>
   </div>
 </template>
@@ -39,17 +51,33 @@ export default {
 }
 </script>
 
-<style>
+<style lang="less">
+@import (less) "~colors.css/css/colors.min.css";
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 4rem;
+  .black();
+}
+
+#app > div {
+  padding-bottom: 1rem;
 }
 
 .moment {
   font-weight: bold;
+}
+
+.open-time {
+  font-weight: bold;
+  .olive();
+}
+
+.reservation {
+  font-weight: bold;
+  .maroon();
 }
 </style>

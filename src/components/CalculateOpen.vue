@@ -12,7 +12,7 @@ export default {
       let open = moment(store.selected)
       open.add(-30, 'd')
       open.hour(9).startOf('hour')
-      return open
+      return open.format('dddd, MMMM D, YYYY H:mm A')
     }
   },
 }

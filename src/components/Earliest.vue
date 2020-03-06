@@ -12,7 +12,7 @@ export default {
       let earliest = moment(store.nextOpen)
       earliest.add(30, 'd')
       store.earliest = earliest
-      return earliest
+      return earliest.format('dddd, MMMM D, YYYY')
     }
   },
 }
